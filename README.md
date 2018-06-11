@@ -14,11 +14,11 @@ make install
 
 ## Usage
 
+After `cd your-repo-path`
 
 #### start
 
 ```
-# cd your-repo-path
 git review start develop..feature/xxx
 ```
 
@@ -32,7 +32,6 @@ git review reset
 
 
 ```
-# cd your-repo-path
 git review help
 ```
 
@@ -55,9 +54,9 @@ Comment to current review.
 
 ```
 git review comment lgtm
-git review good # alias `comment good`
-git review bad # alias `comment bad`
-git review skip # alias `comment skip`
+git review good # alias `comment good` and `next`
+git review bad # alias `comment bad` and `next`
+git review skip # alias `comment skip` and `next`
 ```
 
 #### next/prev
@@ -65,7 +64,7 @@ git review skip # alias `comment skip`
 Move next(prev) commit without comment
 
 ```
-git review next # same as skip
+git review next
 git review prev
 ```
 
