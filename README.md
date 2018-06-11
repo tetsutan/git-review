@@ -3,6 +3,8 @@
 
 Reviewing tool for git
 
+![git-review](https://raw.githubusercontent.com/tetsutan/git-review/master/screenshot.gif)
+
 
 ## Install
 
