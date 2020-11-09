@@ -4,7 +4,7 @@ NAME:=	git-review-core
 default:	build
 
 build:
-	go build -o "bin/${NAME}" ./cmd/git-review/*.go
+	go build -o "bin/${NAME}" ./cmd/git-review
 
 clean:
 	rm -rf bin/${NAME}
