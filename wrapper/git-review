@@ -4,12 +4,12 @@ git_review_path=$(dirname $0)
 repo_path=$(git rev-parse --show-toplevel 2>/dev/null)
 current_id=$(cat ${repo_path}/.git/REVIEW_CURRENT 2>/dev/null)
 
-if [[ $1 == "difftool" || $1 == "v" ]]; then
-    if [[ ${current_id} != "" ]]; then
+if [ "$1" = "difftool" -o "$1" = "v" ]; then
+    if [ ${current_id} != "" ]; then
         git difftool ${current_id}^ ${current_id}
     fi
-elif [[ $1 == "diff" || $1 == "d" ]]; then
-    if [[ ${current_id} != "" ]]; then
+elif [ "$1" = "diff" -o "$1" = "d" ]; then
+    if [ ${current_id} != "" ]; then
         git diff ${current_id}^ ${current_id}
     fi
 else
